@@ -24,7 +24,7 @@ else
 fi
 
 echo -e "\e[34mOpening port 80 getting the composer file, and building the project!"
-ufw allow 80/tcp & wget https://raw.githubusercontent.com/nurdism/neko/master/docker-compose.yaml
+ufw allow 80/tcp & wget https://raw.githubusercontent.com/m1k1o/neko/master/docker-compose.yaml
 
 echo "configure the docker-compose.yaml [Services > neko], Leave all blank if you don't know what you are doing."
 read -p "image (nurdism/neko): " n_image
